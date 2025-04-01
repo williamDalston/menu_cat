@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schrödinger's Cat Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="cat_lightbox.png" alt="Schrödinger's Cat Logo" class="logo" />
+        <button id="lang-toggle">🇬🇧 EN / 🇬🇪 KA</button>
+        <button id="dark-toggle">🌙 Dark Mode</button>
+        <h1 class="lang-en">Schrödinger's Cat</h1>
+        <h1 class="lang-ka">შრედინგერის კატა</h1>
+        <h3 class="lang-en">Tbilisi, 2025 — “Where Observation Meets Flavor”</h3>
+        <h3 class="lang-ka">თბილისი, 2025 — „სადაც დაკვირვება გემოვნებას ხვდება“</h3>
+        <!-- Email Signup -->
+        <div class="email-signup">
+            <input type="email" placeholder="Your email" id="emailInput" />
+            <button id="signupButton">Subscribe</button>
+        </div>
+
+    </header>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top">↑ Top</button>
+
+    <nav class="menu-nav" aria-label="Menu navigation">
+        <a href="#starters">Starters</a>
+        <a href="#soups">Soups</a>
+        <a href="#snacks">Snacks</a>
+        <a href="#mains">Mains</a>
+        <a href="#bowls">Bowls</a>
+        <a href="#build">Build Your Bowl</a>
+        <a href="#salads">Salads</a>
+        <a href="#wraps">Wraps</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#sauces">Sauces</a>
+    </nav>
+
+    <div class="diet-filter">
+        <label><input type="checkbox" value="vegan" checked /> Vegan</label>
+        <label><input type="checkbox" value="vegetarian" checked /> Vegetarian</label>
+        <label><input type="checkbox" value="meat" checked /> Meat</label>
+        <label><input type="checkbox" value="unspecified" checked /> Other</label>
+    </div>
+
+    <main>
+        <!-- MENU SECTIONS HERE (abbreviated for now due to length) -->
+        <section id="starters">
+            <span class="anchor-offset" aria-hidden="true"></span>
+            <h2 class="category lang-en">🌟 Starters</h2>
+            <h2 class="category lang-ka">🌟 სტარტერები</h2>
+
+            <div class="menu-item vegan">
+                <div class="menu-item-image">
+                    <img src="images/starters_pkhali.jpg" alt="Pkhali" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>PKHALI (Vegan)</strong> – Minced vegetables, herbs, walnuts, with lavash.
+                    </p>
+                    <p class="lang-ka"><strong>ფხალი</strong> – დაქუცმაცებული ბოსტნეული, მწვანილეული და ნიგოზი. ლავაშით.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item vegan">
+                <div class="menu-item-image">
+                    <img src="images/starters_badricani.jpg" alt="Badricani Nigvzit" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>BADRICANI NIGVZIT (Vegan)</strong> – Grilled eggplant rolls with walnut
+                        paste. Served with lavash.</p>
+                    <p class="lang-ka"><strong>ბადრიჯანი ნიგვზით</strong> – შემწვარი ბადრიჯნის რულეტები ნიგვზის პასტით.
+                        ლავაშით.</p>
+                </div>
+            </div>
+
+            <div class="menu-item vegetarian">
+                <div class="menu-item-image">
+                    <img src="images/starters_tortilla.jpg" alt="Tortilla Chips" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>TORTILLA CHIPS</strong> – With pineapple salsa and guacamole.</p>
+                    <p class="lang-ka"><strong>ტორტილას ჩიფსები</strong> – ანანასის სალსათი და გვაკამოლეთი.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="soups">
+            <span class="anchor-offset" aria-hidden="true"></span>
+            <h2 class="category lang-en">🥣 Quantum Soups</h2>
+            <h2 class="category lang-ka">🥣 კვანტური სუპები</h2>
+
+            <div class="menu-item vegetarian">
+                <div class="menu-item-image">
+                    <img src="images/soups_lentil.jpg" alt="Lentil Soup" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>LENTIL SOUP</strong> – Optional hot butter sauce.</p>
+                    <p class="lang-ka"><strong>ოსპის სუპი</strong> – სურვილისამებრ ცხელი კარაქის სოუსით.</p>
+                </div>
+            </div>
+
+            <div class="menu-item vegetarian">
+                <div class="menu-item-image">
+                    <img src="images/soups_tomato.jpg" alt="Tomato Soup" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>TOMATO SOUP</strong> – Optional Sulguni cheese.</p>
+                    <p class="lang-ka"><strong>პამიდვრის სუპი</strong> – სურვილისამებრ სულგუნით.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="snacks">
+            <span class="anchor-offset" aria-hidden="true"></span>
+            <h2 class="category lang-en">🍟 Snacks & Bites</h2>
+            <h2 class="category lang-ka">🍟 სნექები და ბაითები</h2>
+
+            <div class="menu-item vegetarian">
+                <div class="menu-item-image">
+                    <img src="images/snacks_fries.jpg" alt="French Fries" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>FRENCH FRIES</strong> – Classic, truffle, or Cajun-spiced.</p>
+                    <p class="lang-ka"><strong>ფრენჩ ფრაისი</strong> – კლასიკური, ტრიუფელით ან კაჯუნის სუნელებით.</p>
+                </div>
+            </div>
+
+            <div class="menu-item vegetarian">
+                <div class="menu-item-image">
+                    <img src="images/snacks_onion.jpg" alt="Onion Rings" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>ONION RINGS</strong> – Homemade and crispy.</p>
+                    <p class="lang-ka"><strong>ხახვის რგოლები</strong> – ხელნაკეთი და ხრაშუნა.</p>
+                </div>
+            </div>
+
+            <div class="menu-item vegan">
+                <div class="menu-item-image">
+                    <img src="images/snacks_falafel.jpg" alt="Falafel" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>FALAFEL (Vegan)</strong> – Savory chickpea fritters.</p>
+                    <p class="lang-ka"><strong>ფალაფელი</strong> – გემრიელი წიწაკის ნამცხვრები.</p>
+                </div>
+            </div>
+
+            <div class="menu-item unspecified">
+                <div class="menu-item-image">
+                    <img src="images/snacks_uncertainty.jpg" alt="Uncertainty Bites" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>UNCERTAINTY BITES</strong> – Cheese & potato or surprise no-cheese potato
+                        balls.</p>
+                    <p class="lang-ka"><strong>გაურკვეველი ბაითები</strong> – ყველით ან ყველის გარეშე კარტოფილის
+                        ბურთულები.</p>
+                </div>
+            </div>
+
+            <div class="menu-item meat">
+                <div class="menu-item-image">
+                    <img src="images/snacks_wings.jpg" alt="Cat’s Claw Wings" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>CAT’S CLAW WINGS</strong> – Choice of Cat’s Claw Sauce or Honey Sriracha.
+                    </p>
+                    <p class="lang-ka"><strong>კატის კლანჭების ფრთები</strong> – კატას კლანჭის სოუსით ან თაფლის
+                        სრირაჩათი.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mains">
+            <span class="anchor-offset" aria-hidden="true"></span>
+            <h2 class="category lang-en">🍔 Main Dishes</h2>
+            <h2 class="category lang-ka">🍔 მთავარი კერძები</h2>
+
+            <div class="menu-item meat">
+                <div class="menu-item-image">
+                    <img src="images/mains_tacos.jpg" alt="Tacos" class="dish-thumb" onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>TACOS</strong> – Chicken, beef, or tofu. Includes guacamole, pineapple
+                        salsa, and sour cream.</p>
+                    <p class="lang-ka"><strong>ტაკო</strong> – ქათმით, ხორცით ან ტოფუთი. გვაკამოლე, ანანასის სალსა და
+                        არაჟანი.</p>
+                </div>
+            </div>
+
+            <div class="menu-item meat">
+                <div class="menu-item-image">
+                    <img src="images/mains_classicburger.jpg" alt="Cat’s Cradle Burger" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>CAT’S CRADLE BURGER</strong> – House classic with rich toppings.</p>
+                    <p class="lang-ka"><strong>კატის აკვნის ბურგერი</strong> – სახლის სტილის კლასიკა მდიდარი ტოპინგებით.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item meat">
+                <div class="menu-item-image">
+                    <img src="images/mains_teriyaki.jpg" alt="Teriyaki Burger" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>TERIYAKI BURGER</strong> – Sweet-savory with Asian flair.</p>
+                    <p class="lang-ka"><strong>ტერიაკი ბურგერი</strong> – ტკბილ-მლაშე, აზიური სტილით.</p>
+                </div>
+            </div>
+
+            <div class="menu-item vegan">
+                <div class="menu-item-image">
+                    <img src="images/mains_veganburger.jpg" alt="Vegan Cat’s Cradle Burger" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>VEGAN CAT’S CRADLE BURGER</strong> – Crispy tofu alternative.</p>
+                    <p class="lang-ka"><strong>ვეგანური კატის აკვნის ბურგერი</strong> – ხრაშუნა ტოფუთი ალტერნატივა.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="bowls">
+            <span class="anchor-offset" aria-hidden="true"></span>
+            <h2 class="category lang-en">🥗 Signature Bowls</h2>
+            <h2 class="category lang-ka">🥗 ავტორიზებული თასები</h2>
+
+            <div class="menu-item vegetarian">
+                <div class="menu-item-image">
+                    <img src="images/bowls_paradox.jpg" alt="Paradox Bowl" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>PARADOX BOWL</strong> – Green mix, quinoa, roasted vegetables, chicken or
+                        tofu, tahini drizzle.</p>
+                    <p class="lang-ka"><strong>პარადოქსის თასი</strong> – მწვანე მიქსი, ქინოა, შემწვარი ბოსტნეული,
+                        ქათამი ან ტოფუ, ტაჰინის სოუსით.</p>
+                </div>
+            </div>
+
+            <div class="menu-item vegan">
+                <div class="menu-item-image">
+                    <img src="images/bowls_mediterranean.jpg" alt="Mediterranean Wave" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>MEDITERRANEAN WAVE (Vegan & Fasting)</strong> – Falafel, hummus,
+                        tabbouleh, lemon-olive oil.</p>
+                    <p class="lang-ka"><strong>მედიტერანული ტალღა</strong> – ფალაფელი, ჰუმუსი, ტაბულე,
+                        ლიმონის-ზეთისხილის ზეთით.</p>
+                </div>
+            </div>
+
+            <div class="menu-item vegetarian">
+                <div class="menu-item-image">
+                    <img src="images/bowls_physicist.jpg" alt="Little Physicist Bowl" class="dish-thumb"
+                        onclick="openLightbox(this)" />
+                </div>
+                <div class="menu-item-text">
+                    <p class="lang-en"><strong>LITTLE PHYSICIST BOWL</strong> – Basmati rice, roasted carrot, cucumber,
+                        honey mustard drizzle.</p>
+                    <p class="lang-ka"><strong>პატარა ფიზიკოსის თასი</strong> – ბასმატი ბრინჯი, სტაფილო, კ
+
+                    <section id="build">
+                        <span class="anchor-offset" aria-hidden="true"></span>
+                        <h2 class="category lang-en">⚗️ Build Your Own Bowl</h2>
+                        <h2 class="category lang-ka">⚗️ შექმენი შენი თასი</h2>
+
+                        <div class="menu-item unspecified">
+                            <p class="lang-en"><strong>Proteins:</strong> Grilled Salmon, Marinated Tofu, Grilled
+                                Chicken</p>
+                            <p class="lang-ka"><strong>ცილები:</strong> შემწვარი ორაგული, მარწყვის ტოფუ, შემწვარი ქათამი
+                            </p>
+                        </div>
+
+                        <div class="menu-item unspecified">
+                            <p class="lang-en"><strong>Sauces:</strong> Honey Mustard, Tahini, Balsamic, Lemon-Olive</p>
+                            <p class="lang-ka"><strong>სოუსები:</strong> თაფლის-მასტარდი, ტაჰინი, ბალსამიკო,
+                                ლიმონის-ზეთისხილი</p>
+                        </div>
+
+                        <div class="menu-item unspecified">
+                            <p class="lang-en"><strong>Add-ons:</strong> Pickled Onions, Carrots, Snap Peas, Broccoli,
+                                Peppers, Rice, Quinoa, Walnuts</p>
+                            <p class="lang-ka"><strong>დამატებები:</strong> მარინადირებული ხახვი, სტაფილო, შაქრის ბარდა,
+                                ბროკოლი, ბულგარული, ბრინჯი, ქინოა, ნიგოზი</p>
+                        </div>
+                    </section>
+                    <section id="salads">
+                        <span class="anchor-offset" aria-hidden="true"></span>
+                        <h2 class="category lang-en">🥗 Salads</h2>
+                        <h2 class="category lang-ka">🥗 სალათები</h2>
+
+                        <div class="menu-item vegetarian">
+                            <div class="menu-item-image">
+                                <img src="images/salads_greek.jpg" alt="Greek Salad" class="dish-thumb"
+                                    onclick="openLightbox(this)" />
+                            </div>
+                            <div class="menu-item-text">
+                                <p class="lang-en"><strong>GREEK SALAD</strong> – Feta, cucumber, tomato, olive, onion,
+                                    oregano.</p>
+                                <p class="lang-ka"><strong>ბერძნული სალათი</strong> – ფეტა, კიტრი, პამიდორი, ზეთისხილი,
+                                    ხახვი, ორეგანო.</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item vegetarian">
+                            <div class="menu-item-image">
+                                <img src="images/salads_halloumi.jpg" alt="Halloumi Salad" class="dish-thumb"
+                                    onclick="openLightbox(this)" />
+                            </div>
+                            <div class="menu-item-text">
+                                <p class="lang-en"><strong>HALLOUMI SALAD</strong> – Grilled halloumi, green mix, cherry
+                                    tomato, cucumber.</p>
+                                <p class="lang-ka"><strong>ჰალუმის სალათი</strong> – შემწვარი ჰალუმი, მწვანე მიქსი,
+                                    ბოსტნეული, კიტრი.</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item vegetarian">
+                            <div class="menu-item-image">
+                                <img src="images/salads_special.jpg" alt="Schrödinger’s Special" class="dish-thumb"
+                                    onclick="openLightbox(this)" />
+                            </div>
+                            <div class="menu-item-text">
+                                <p class="lang-en"><strong>SCHRODINGER’S SPECIAL</strong> – Green mix, tomato, cucumber,
+                                    onion, oil & balsamic or lemon dressing.</p>
+                                <p class="lang-ka"><strong>შრედინგერის სპეციალი</strong> – მწვანე მიქსი, პამიდორი,
+                                    კიტრი, ხახვი, ზეთი და ბალსამიკო ან ლიმონის დრესინგი.</p>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section id="wraps">
+                        <span class="anchor-offset" aria-hidden="true"></span>
+                        <h2 class="category lang-en">🌯 Breakfast Wraps</h2>
+                        <h2 class="category lang-ka">🌯 საუზმის როლები</h2>
+
+                        <div class="menu-item vegetarian">
+                            <div class="menu-item-image">
+                                <img src="images/wraps_burrito.jpg" alt="Burrito" class="dish-thumb"
+                                    onclick="openLightbox(this)" />
+                            </div>
+                            <div class="menu-item-text">
+                                <p class="lang-en"><strong>BURRITO</strong> – Warm and hearty.</p>
+                                <p class="lang-ka"><strong>ბურიტო</strong> – თბილი და ნოყიერი.</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item vegetarian">
+                            <div class="menu-item-image">
+                                <img src="images/wraps_lettuce.jpg" alt="Lettuce & Tomato Wrap" class="dish-thumb"
+                                    onclick="openLightbox(this)" />
+                            </div>
+                            <div class="menu-item-text">
+                                <p class="lang-en"><strong>LETTUCE & TOMATO</strong> – Crisp and fresh.</p>
+                                <p class="lang-ka"><strong>სალათის და პამიდვრის როლი</strong> – ხრაშუნა და ახალი.</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item vegetarian">
+                            <div class="menu-item-image">
+                                <img src="images/wraps_spinach.jpg" alt="Spinach & Cheese Wrap" class="dish-thumb"
+                                    onclick="openLightbox(this)" />
+                            </div>
+                            <div class="menu-item-text">
+                                <p class="lang-en"><strong>SPINACH & CHEESE</strong> – Creamy and comforting.</p>
+                                <p class="lang-ka"><strong>ისპანახის და ყველის როლი</strong> – კრემისებური და
+                                    დამამშვიდებელი.</p>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section id="desserts">
+                        <span class="anchor-offset" aria-hidden="true"></span>
+                        <h2 class="category lang-en">🍰 Desserts</h2>
+                        <h2 class="category lang-ka">🍰 დესერტები</h2>
+
+                        <div class="menu-item vegetarian">
+                            <div class="menu-item-image">
+                                <img src="images/desserts_strawberry.jpg" alt="Strawberry & Yogurt Muffins"
+                                    class="dish-thumb" onclick="openLightbox(this)" />
+                            </div>
+                            <div class="menu-item-text">
+                                <p class="lang-en"><strong>STRAWBERRY & YOGURT MUFFINS</strong></p>
+                                <p class="lang-ka"><strong>მაფინები მარწყვით და იოგურტით</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item vegetarian">
+                            <div class="menu-item-image">
+                                <img src="images/desserts_chocolate.jpg" alt="Double Chocolate Muffins"
+                                    class="dish-thumb" onclick="openLightbox(this)" />
+                            </div>
+                            <div class="menu-item-text">
+                                <p class="lang-en"><strong>DOUBLE CHOCOLATE MUFFINS</strong></p>
+                                <p class="lang-ka"><strong>ორმაგი შოკოლადის მაფინები</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item vegan">
+                            <div class="menu-item-image">
+                                <img src="images/desserts_carrot.jpg" alt="Vegan Carrot Muffins" class="dish-thumb"
+                                    onclick="openLightbox(this)" />
+                            </div>
+                            <div class="menu-item-text">
+                                <p class="lang-en"><strong>VEGAN CARROT MUFFINS</strong></p>
+                                <p class="lang-ka"><strong>ვეგანური სტაფილოს მაფინები</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item vegetarian">
+                            <div class="menu-item-image">
+                                <img src="images/desserts_banana.jpg" alt="Banana Muffins" class="dish-thumb"
+                                    onclick="openLightbox(this)" />
+                            </div>
+                            <div class="menu-item-text">
+                                <p class="lang-en"><strong>BANANA MUFFINS</strong></p>
+                                <p class="lang-ka"><strong>ბანანის მაფინები</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item vegetarian">
+                            <div class="menu-item-image">
+                                <img src="images/desserts_cheesecake.jpg" alt="Cheesecake with Raspberry Sauce"
+                                    class="dish-thumb" onclick="openLightbox(this)" />
+                            </div>
+                            <div class="menu-item-text">
+                                <p class="lang-en"><strong>CHEESECAKE</strong> – With raspberry sauce.</p>
+                                <p class="lang-ka"><strong>ჩიზქეიქი</strong> – ჟოლოს სოუსით.</p>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section id="sauces">
+                        <span class="anchor-offset" aria-hidden="true"></span>
+                        <h2 class="category lang-en">🧪 Sauce Options</h2>
+                        <h2 class="category lang-ka">🧪 სოუსების არჩევანი</h2>
+
+                        <div class="menu-item unspecified">
+                            <p class="lang-en">Curry Mayo, Truffle Mayo, Honey Mustard, Chef’s Special, Garlic Mayo,
+                                Spicy Mayo, Chilli Mayo, Ketchup, Mayonnaise, Cat’s Claw Sauce, Honey Sriracha</p>
+                            <p class="lang-ka">კარის მაიონეზი, ტრიუფელის მაიონეზი, თაფლის მასტარდი, შეფის სპეციალი,
+                                ნივრის მაიონეზი, ცხარე მაიონეზი, ჩილი მაიონეზი, კეტჩუპი, მაიონეზი, კატის კლანჭის სოუსი,
+                                თაფლის სრირაჩა</p>
+                        </div>
+                    </section>
+
+
+
+                    <!-- Will generate full content in segments -->
+    </main>
+
+
+
+    <footer class="footer">
+        <p class="lang-en">Follow us @schrodingerscat — #CuriousAtSchrodingers</p>
+        <p class="lang-ka">გაგვიყევით @schrodingerscat — #საინტერესოაქშრედინგერთან</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
